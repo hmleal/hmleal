@@ -12,8 +12,9 @@ server:
 
 build:
 	@rm -rf public/*
+	@sass themes/hmleal-theme/static/css/app.scss:themes/hmleal-theme/static/css/app.css --style compressed
 	@hugo -s .
 	@rm public/css/app.scss public/css/_Syntax.scss
 
 sass:
-	@sass --watch static/css/app.scss:static/css/app.css --style compressed
+	@sass --watch themes/hmleal-theme/static/css/app.scss:themes/hmleal-theme/static/css/app.css --style compressed
