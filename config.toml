@@ -5,5 +5,7 @@ theme = "hmleal-theme"
 
 sectionPagesMenu = "main"
 
+googleAnalytics = "UA-58687169-1"
+
 [params]
   description = "Another dev blog written in Hugo"
