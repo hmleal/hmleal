@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+
+    <title>{{.Site.Title}}</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}/css/app.css?{{now.Unix}}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="{{.Site.BaseURL}}">{{.Site.Title}}</a>
+        </div>
+        <div class="header__menu">
+            {{$currentPage := .}}
+            {{range .Site.Menus.main}}
+            <a href="{{.URL}}" title="{{.Title}}">{{.Name}}</a>
+            {{end}}
+        </div>
+    </header>
+    {{block "main" .}}{{end}}
+</body>
+
+</html>

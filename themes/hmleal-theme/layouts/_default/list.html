@@ -1,0 +1,7 @@
+{{define "main"}}
+{{range first 10 (where .Data.Pages "Type" "posts") }}
+<div class="container">
+    {{partial "post.html" .}}
+</div>
+{{end}}
+{{end}}

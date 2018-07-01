@@ -1,0 +1,11 @@
+<div class="post box">
+    <h2 class="post__title">
+        <a href="{{.Permalink}}">{{.Title}}</a>
+    </h2>
+    <div class="post__meta">
+        <span>{{.Date.Format "02/01/2006"}} by
+            <a href="#">{{.Params.author}}</a>
+        </span>
+    </div>
+    {{.Content}}
+</div>

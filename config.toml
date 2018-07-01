@@ -1,0 +1,9 @@
+baseURL = "http://hmleal.github.io"
+languageCode = "en-us"
+title = "hmleal"
+theme = "hmleal-theme"
+
+sectionPagesMenu = "main"
+
+[params]
+  description = "Another dev blog written in Hugo"
