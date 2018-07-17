@@ -1,9 +1,9 @@
-<div class="post box">
+<div class="post">
     <h2 class="post__title">
         <a class="post__link" href="{{.Permalink}}">{{.Title}}</a>
     </h2>
     <span class="post__meta">
-        {{.Date.Format "January 2, 2006"}} by <a href="#">{{.Params.author}}</a>
+        {{.Date.Format "January 2, 2006"}} by <span class="post__author">{{.Params.author}}</span>
     </span>
     {{.Content}}
 </div>
