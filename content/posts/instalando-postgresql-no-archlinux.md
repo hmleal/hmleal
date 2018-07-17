@@ -4,8 +4,8 @@ date: 2015-01-24T20:00:00+01:00
 author: "Henrique Leal"
 ---
 
-Olá pessoal o artigo é sobre como instalar e rodar o PostgreSQL no seu
-ArchLinux. Atualmente esse é o banco primário no meu stack de desenvolvimento.
+Olá pessoal o artigo é sobre como instalar e rodar o **PostgreSQL** no seu
+**ArchLinux**. Atualmente esse é o banco primário no meu stack de desenvolvimento.
 
 O PostgreSQL é um poderoso sistema gerenciador de banco de dados
 objeto-relacional de código aberto. Tem mais de 15 anos de desenvolvimento
